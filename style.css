@@ -1,0 +1,49 @@
+@keyframes popDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.animate-fade-down {
+    animation: popDown 0.8s ease-out;
+}
+.cursive-font {
+    font-family: 'Dancing Script', cursive;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+}
+
+nav a {
+    font-weight: 700; /* bold */
+    text-transform: uppercase; /* makes text uppercase */
+}
+@keyframes fadeDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-down {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-down.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
